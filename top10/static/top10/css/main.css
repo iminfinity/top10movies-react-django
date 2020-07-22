@@ -1,0 +1,151 @@
+*{
+    margin: 0px!important;
+    padding: 0px!important;
+    box-sizing: border-box!important;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#app{
+    height: 100vh;
+    width: 100vw;
+}
+.mainHeader{
+    text-align: center;
+    font-size: 45px;
+}
+
+.lists{
+    list-style-type: none;
+}
+
+.navigationYear li {
+    height: 50px;
+}
+
+.navigationYear li button{
+    width: 100%;
+    height: 100%;
+}
+
+.leftList{
+    height: 100%;
+}
+
+.leftList li{
+    height: 10%;
+}
+
+.leftList button{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+button{
+    font-size: 25px;
+    font-family: 'Old Standard TT', serif;
+    background: inherit;
+    border: none;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+button:hover{
+    font-weight: bold;
+}
+button:focus{
+    border: none;
+    outline: none!important;
+}
+
+
+
+/* Main movie style */
+.movieDisplay{
+    height: 80vh;
+}
+
+#movie{
+    padding: 25px;
+}
+.movie{
+    width: auto;
+    height: auto;
+    background: rgba(16,16,16,.9);
+    color: whitesmoke;
+    border-radius: 1%;
+    box-shadow: -10px -10px 20px goldenrod;
+}
+
+.movie img{
+    float: right;
+    padding: 40px 40px 0 0!important;
+}
+.movie h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    margin-left: 20px!important;
+}
+.movie .details{
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 2px;;
+}
+.movie p{
+    font-size: 22px;
+    margin-left: 20px!important;
+}
+.movie .movie-name{
+    text-align: center;
+    font-family: 'Old Standard TT', serif!important;
+    padding-top: 20px!important;
+}
+.movie h2, .movie p{
+    border-bottom: 1px solid rgba(240,240,240,.1);
+    font-family: 'Old Standard TT', serif;
+}
+.movie{
+    animation-name: dissolve;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+@keyframes dissolve{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/* footer style */
+.footer ul{
+    list-style-type: none;
+}
+.footer ul li{
+    display: inline;
+}
+.footer ul li a img{
+    width: 60px;
+    padding: 20px 0;
+}
+
+@keyframes change{
+    0%{
+        color:  whitesmoke;
+    }
+    0%{
+        color:  black;
+    }
+}
